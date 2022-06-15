@@ -7,6 +7,12 @@ This project challenges Data Analytic students to clean up the way data is store
 The purpose of my analysis was to correlate success criteria for campaigns based on what time of year Theater campaigns were launched and to break down "successful" outcomes based on the the fund rasing goal.  
 
 ## Analysis and Challenges
+To measure outcomes based on Launch date, I had to convert the date information so I could cleanly pivot out the data by month. To do this, I created another column and used the formula ==(L2/86400)+DATE(1970,1,1) to get the date in the format of (MM,DD,YY).  I then had to create another column to filter out the data by Years.  To pull the years from the newly converted dates, I used the code =TEXT(J2,"YYYY").  From there I pivoted out the data with filters by Parenty Catergory and Years, and sorted by most successful months.
+
+
+To measure the outcomes based on goals, I created another sheet and measured the outcomes based on different ranges of goal money needed to be determined a successful campaign.  I had to use the COUNTIFS function because I needed the formula to measure a count if both criteria measures were met.  =COUNTIFS(Kickstarter!D:D,"<1000", Kickstarter!F:F,"successful")
+
+
 
 ### Analysis of Outcomes Based on Launch Date
 ![](https://user-images.githubusercontent.com/107078763/173824774-eaa800f8-a599-4fd1-b544-321d4c3015aa.png)
@@ -23,10 +29,12 @@ Another challenge I encountered was presenting this Analysis as a READ.md file. 
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-1. 
-
+1. The largest amount of successful campaigns were launched in summer months (May, June,July). 
+2. December was the least successful month for Campaign launches.
 - What can you conclude about the Outcomes based on Goals?
-
+When the Goal amount was $10,000 or higher there was a less then 50% successful campaigns.
 - What are some limitations of this dataset?
-
+A limitation of this dataset is that the data is not very recent.  This data is from 2009 to 2017 so the most recent information is already 5 years old and would not help as much in 2022.
 - What are some other possible tables and/or graphs that we could create?
+Another way we could analyze this data would be to graph the correlation between successful outcomes and the number of backers for each campaign.  
+We could also measure the outcomes based on how long the campaign was run by subtracting the time from launch date to the deadline to see if there was any correlation between successful campaigns and failed based on how long each campaign was run.
