@@ -38,5 +38,5 @@ When the Goal amount was $10,000 or higher there was a less then 50% successful 
 - What are some limitations of this dataset?
 A limitation of this dataset is that the data is not very recent.  This data is from 2009 to 2017 so the most recent information is already 5 years old and would not help as much in 2022.
 - What are some other possible tables and/or graphs that we could create?
-Another way we could analyze this data would be to graph the correlation between successful outcomes and the number of backers for each campaign.  
-We could also measure the outcomes based on how long the campaign was run by subtracting the time from launch date to the deadline to see if there was any correlation between successful campaigns and failed based on how long each campaign was run.
+  -Another way we could analyze this data would be to graph the correlation between successful outcomes and the number of backers for each campaign.  
+  -We could also measure the outcomes based on how long the campaign was run by subtracting the time from launch date to the deadline to see if there was any     correlation between successful campaigns and failed based on how long each campaign was run.
