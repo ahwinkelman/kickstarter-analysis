@@ -9,9 +9,11 @@ The purpose of my analysis was to correlate success criteria for campaigns based
 ## Analysis and Challenges
 To measure outcomes based on Launch date, I had to convert the date information so I could cleanly pivot out the data by month. To do this, I created another column and used the formula ==(L2/86400)+DATE(1970,1,1) to get the date in the format of (MM,DD,YY).  I then had to create another column to filter out the data by Years.  To pull the years from the newly converted dates, I used the code =TEXT(J2,"YYYY").  From there I pivoted out the data with filters by Parenty Catergory and Years, and sorted by most successful months.
 
+![Theater Outcomes based on launch date](https://user-images.githubusercontent.com/107078763/173841071-209c242e-ad98-40a0-a26d-bea071c01944.png)
 
 To measure the outcomes based on goals, I created another sheet and measured the outcomes based on different ranges of goal money needed to be determined a successful campaign.  I had to use the COUNTIFS function because I needed the formula to measure a count if both criteria measures were met.  =COUNTIFS(Kickstarter!D:D,"<1000", Kickstarter!F:F,"successful")
 
+  ![CountIf Outcomes based on goal](https://user-images.githubusercontent.com/107078763/173841334-39d9274e-2ccd-4325-89a1-92fae67c9ed4.png)
 
 
 ### Analysis of Outcomes Based on Launch Date
