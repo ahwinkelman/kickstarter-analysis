@@ -13,7 +13,7 @@ To measure outcomes based on Launch date, I had to convert the date information 
 
 To measure the outcomes based on goals, I created another sheet and measured the outcomes based on different ranges of goal money needed to be determined a successful campaign.  I had to use the COUNTIFS function because I needed the formula to measure a count if both criteria measures were met.  =COUNTIFS(Kickstarter!D:D,"<1000", Kickstarter!F:F,"successful")
 
-  ![CountIf Outcomes based on goal](https://user-images.githubusercontent.com/107078763/173841334-39d9274e-2ccd-4325-89a1-92fae67c9ed4.png)
+  ![countifs](https://user-images.githubusercontent.com/107078763/176211348-88b7eb9a-f40a-4c0a-8240-7aa30aa0e6c3.png)
 
 
 ### Analysis of Outcomes Based on Launch Date
