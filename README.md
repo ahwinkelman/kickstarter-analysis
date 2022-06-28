@@ -22,7 +22,7 @@ This graph displays the number of successful, failed, and canceled Campaigns for
 
 
 ### Analysis of Outcomes Based on Goals
-![Outcomes_vs_Goal](https://user-images.githubusercontent.com/107078763/173825183-0adcc6b4-f89e-4d4d-8f65-127bf313f5e9.png)
+![Countif](https://user-images.githubusercontent.com/107078763/176210931-1a925d76-1b68-478f-9206-e2825857519d.png)
 This graph displays the successful, failed, and canceled outcomes as a percentage along with the goal of each campaign based on of how much money they were looking to raise.  
 ### Challenges and Difficulties Encountered
 I struggled in the Analysis of Outcomes Based on Goals with having to recreate CountIf code.  It was tedious to have to edit 36 different CountIf statements because I was unable to use the same line for each cell.  I ended up using the same code from the number of successful outcomes and adjusting the statement based on the other two outcomes.
